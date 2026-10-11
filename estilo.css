@@ -4,6 +4,13 @@
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
+    
+}
+html, body {
+    background-color: #1e2326;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 html {
     /*me permite deslizar al dar click en los links del menu*/
@@ -221,8 +228,16 @@ font-family: 'righteous';
     width: 100%;
 }
 /*seccion skilll*/
+
+.skills .fila {
+    display: flex;
+    justify-content: space-between;
+}
+.skills .fila .col {
+    width: 48%; /* Divide el espacio para dos columnas */
+}
 .skills {
-    background-color: #252a2e;
+    background-color: #1e232a;
     color: #fff;
     padding: 50px 20px;
 }
@@ -374,6 +389,33 @@ font-family: 'righteous';
     0%{width: 0%;}
     100%{width: 85%;}
 }
+
+/* Contenedor general de las habilidades y sus columnas */
+.skills .fila .col {
+    width: 50%;
+    float: left;
+    padding: 0 20px;
+}
+
+/* Estilo de la barra gris de fondo */
+.skills .barra-skill {
+    background-color: #252830;
+    width: 100%;
+    height: 8px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    position: relative;
+}
+
+/* El relleno de color que representa el porcentaje */
+.skills .barra-skill .progreso {
+    background-color: #1abc9c; /* El color verde de tu tema */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 4px;
+} 
 /*curriculum*/
 .curriculum {
     background-color: #1e2326;
